@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <h1>DojoWeather</h1>
+        <ul>
+            <li onclick="alert('Loading weather report')">Burbank</li>
+            <li onclick="alert('Loading weather report')">Chicago</li>
+            <li onclick="alert('Loading weather report')">Dallas</li>
+        </ul>
+    </nav>
+
+    <div class="top-section dflex">
+        <p>San Jose</p>
+        <div class="dflex">
+            <p>show temp in <span></span> </p>
+            <select class="select" onchange="convertTemp(this)">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-sect">
+        <div class="col">
+            <p class="big-font">Today</p>
+            <img src="./assets/some_rain.png" alt="rainny" class="round-image">
+            <p class="little-font">some rain</p>
+            <div class="dflex2" >
+                <p class="p1" id="temp1">24</p>
+                <p class="p2" id="temp2">18</p>
+            </div>
+        </div>
+        <div class="col">
+            <p class="big-font">Tomorrow</p>
+            <img src="./assets/some_sun.png" alt="sunny" class="round-image">
+            <p class="little-font">some sun</p>
+            <div class="dflex2">
+                <p class="p1" id="temp3">27</p>
+                <p class="p2" id="temp4">19</p>
+            </div>
+        </div>
+        <div class="col">
+            <p class="big-font">Friday</p>
+            <img src="./assets/some_clouds.png" alt="cloudy" class="round-image">
+            <p class="little-font">some clouds</p>
+            <div class="dflex2">
+                <p class="p1" id="temp5">21</p>
+                <p class="p2" id="temp6">16</p>
+            </div>
+        </div>
+        <div class="col">
+            <p class="big-font">Saturday</p>
+            <img src="./assets/some_sun.png" alt="sunny" class="round-image">
+            <p class="little-font">some sunny</p>
+            <div class="dflex2">
+                <p class="p1" id="temp7">26</p>
+                <p class="p2" id="temp8">21</p>
+            </div>
+        </div>
+    </div>
+    <div class="cookie dflex" id="cookiee">
+        <img src="./assets/cookie.png" alt="cookie" class="img-cookie">
+        <div class="pragraph">
+            <h2>Stop! Cookie Time</h2>
+            <p class="cookie-paragraph">We use cookies (sadly not the edible ones) to personalize <br> content and ads, to provide social media features and to <br> analyse our traffic. <a href="#">Read more</a></p>
+        </div>
+        <button onclick="removeBTN(cookiee)" class="btnn">I accept</button>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
