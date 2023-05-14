@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./endi.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <header class="nav dflex">
+                <p class="profile">Profile</p>
+                <p class="bar-nav">Home</p>
+                <p class="bar-nav">My Profile</p>
+                <p class="bar-nav">Find Connections</p>
+                <button class="btn">Sign Out</button>
+            </header>
+                </div>
+        <div class="row">
+            <div class="left border">
+                <header class="nav-sx"></header>
+                <div><img src="./images/jane-m.jpg" alt="jane" class="user-icon">
+                    <p id="nameReplace" class="name-pos">Jane Doe</p>
+                </div>
+                <img src="./icons/map-marker.png" alt="map" class="map-icon">
+                <p class="place-pos">Seattle</p>
+                <div class="dflex aligment">
+                    <p>Developer<span>|</span></p>
+                    <p>Engineer<span>|</span></p>
+                    <p>Problem Solver</p>
+                </div>
+                <p class="dflex aligment">Master of shadows and Internet!</p>
+                <div><img src="./icons/gear.png" alt="gear" class="map-icon">
+                    <button onclick="editName()" class="btn1">edit profile</button>
+                </div>
+            </div>
+            <div class="right border">
+                <div class="nav-dx"><div class="nav-tab1">2</div>Connection Request</div>
+                <div id="name-1" class="row-dx">
+                    <img src="./images/todd-s.jpg" alt="user-circle" class="userdx-icon">
+                    <p class="name-1" >Todd EJ</p>
+                    <button class="btn2">&#10003</button>
+                    <button class="btn2" onclick="removeName(0)">&#10007</button>
+                </div>
+                <div id="name-2" class="row-dx">
+                    <img src="./images/phil-s.jpg" alt="user-circle" class="userdx-icon">
+                    <p class="name"  >Phil Key</span></p>
+                    <button class="btn2">&#10003</button>
+                    <button class="btn2" onclick="removeName(1)">&#10007</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="left border">
+                <div><div class="nav-down"><p>Education</p></div></div>
+                <div class="text-pos"><p class="p2">Coding Dojo - Full Stack Bootcamp</p>
+                <p class="p2">Dec 2019 - Mar 2020</p>
+                <p class="p2">Triple black belt in Python, MERN and C#...</p></div>
+            </div>
+            <div class="right2 lastDiv border">
+                <div class="nav-dw">
+                    <div class="nav-tab2">500+</div>Your Connection
+                </div>
+                <div class="row-dx">
+                    <img src="./images/adrien-s.jpg" alt="bodi" class="userdx-icon">
+                    <p class="name" id="name3">Adrien <span> D</span></p>
+                </div>
+                <div class="row-dx">
+                    <img src="./images/anne-s.jpg" alt="bodi" class="userdx-icon">
+                    <p class="name" id="name4">Anne <span> J</span></p>
+                </div>
+                <div class="row-dx">
+                    <img src="./images/alayne-s.jpg" alt="bodi" class="userdx-icon">
+                    <p class="name" id="name5">Alayne <span> T</span></p>
+                </div>
+                <div class="row-dx">
+                    <img src="./images/arry-s.jpg" alt="bodi" class="userdx-icon">
+                    <p class="name" id="name6">Arry <span> Y</span></p>
+                </div>
+                <div class="footer-dx border-footer"><a href="#" class="view">View More</a class="links"></div>
+            </div>
+            </div>
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
